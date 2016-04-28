@@ -1,0 +1,98 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+}
+@font-face {
+    font-family: semplicitaLight;
+    src: url(fonts/semplicita.light.otf);
+}
+@font-face {
+    font-family: semplicitaMedium;
+    src: url(fonts/semplicita.medium.otf);
+}
+@font-face {
+    font-family: semplicitaBold;
+    src: url(fonts/semplicita.bold.otf);
+}
+#background {
+   	position: fixed; 
+  	top: 0; 
+  	left: 0;
+  	/* Preserve aspet ratio */
+  	min-width: 100%;
+  	min-height: 100%;
+}
+#leftDiv {
+	border: 2px solid steelblue;
+}
+#rightDiv {
+	border: 2px solid pink;
+}
+.arrow {
+	width: 60px;
+    height: auto;
+}
+#leftArrow {
+	transform: rotate(90deg);
+}
+#rightArrow {
+	transform: rotate(270deg);
+}
+
+#sideArrowContainer {
+	width: 100%;
+	padding: 10px;
+
+  	position: fixed;
+  	top: 50%;
+  	left: 50%;
+  	/* bring your own prefixes */
+  	transform: translate(-50%, -50%);
+}
+#leftDiv {
+	width: 50%;
+	float: left;
+}
+#rightDiv {
+	margin-left: 50%;
+}
+
+
+/* Arrange left and right arrow div and text side by side */
+#leftArrowDiv {
+	border: 2px solid yellow;
+
+	width: 10%;
+	float: left;
+}
+#leftText {
+	border: 2px solid red;
+
+	margin-left: 10%;
+}
+#rightText {
+	border: 2px solid white;
+
+	width: 90%;
+	float: left;
+}
+#rightArrowDiv {
+	border: 2px solid orange;
+
+	margin-left: 90%;
+}
+
+/* vertically center text divs */
+#leftText, #rightText {
+	position: relative;
+  	top: -25%;
+  	transform: translateY(25%);
+}
+
+/* format text */
+.arrowText {
+	font-family: semplicitaMedium;
+    color: white;
+    font-size: 2em;
+}

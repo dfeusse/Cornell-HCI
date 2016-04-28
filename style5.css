@@ -1,0 +1,89 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+}
+@font-face {
+    font-family: semplicitaLight;
+    src: url(fonts/semplicita.light.otf);
+}
+@font-face {
+    font-family: semplicitaMedium;
+    src: url(fonts/semplicita.medium.otf);
+}
+@font-face {
+    font-family: semplicitaBold;
+    src: url(fonts/semplicita.bold.otf);
+}
+#background {
+   	position: fixed; 
+  	top: 0; 
+  	left: 0;
+  	/* Preserve aspet ratio */
+  	min-width: 100%;
+  	min-height: 100%;
+}
+#leftArrowContainer, #downArrowContainer, #rightArrowContainer {
+	border: 2px solid yellow;
+
+	width: 100%;
+	padding: 10px;
+
+	height: 90px;
+}
+#rightText, #downText, #leftText {
+	border: 2px solid steelblue;
+}
+#leftArrowDiv, #downArrowDiv, #rightArrowDiv {
+	border: 2px solid pink;
+}
+.arrow {
+	width: 60px;
+    height: auto;
+}
+#leftArrow {
+	transform: rotate(90deg);
+}
+#rightArrow {
+	transform: rotate(270deg);
+}
+
+/* Arrange left arrow div and left text side by side */
+#sideArrowContainer {
+	padding: 10px;
+
+  	position: fixed;
+  	top: 50%;
+  	left: 50%;
+  	/* bring your own prefixes */
+  	transform: translate(-50%, -50%);
+}
+#leftArrowContainer {
+	padding: 10px;
+
+  	position: fixed;
+  	top: 50%;
+  	left: 50%;
+  	/* bring your own prefixes */
+  	transform: translate(-50%, -50%);
+}
+#leftArrowDiv {
+	width: 50%;
+	float: left;
+}
+#leftText {
+	margin-left: 50%;
+}
+
+/* Arrange right arrow div and left text side by side */
+#rightArrowContainer {
+	width: 100%;
+	padding: 10px;
+}
+#rightText {
+	width: 50%;
+	float: left;
+}
+#rightArrowDiv {
+	margin-left: 50%;
+}

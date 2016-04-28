@@ -1,0 +1,109 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 130px;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
+#background {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.newFooter {
+    position: fixed;
+    bottom: 25px;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+@font-face {
+    font-family: semplicitaMedium;
+    src: url(fonts/semplicita.medium.otf);
+}
+
+/* Left Arrow */
+
+#leftDiv {
+    min-height: 100%;
+    min-height: 100%;
+    height: 100%;
+    border: 3px solid red;
+}
+#leftArrowDiv {
+    border: 3px solid blue;
+}
+.left-arrow {
+    width: 60px;
+    height: auto;
+    transform: rotate(90deg);
+}
+
+.processContainer {
+    border: 3px solid white;
+
+    width: 25%;
+    height: 60px;
+    background: red;
+    float: left;
+}
+.leftArrowContainer {
+    border: 3px solid blue;
+
+    margin-left: 25%;
+    height: 60px;
+    background: black;
+}
+
+/* Right Arrow */
+
+#rightArrowDiv {
+    border: 3px solid red;
+}
+
+
+/* Footer / Arrow */
+.footerArrowContainer {
+    width: 50%;
+    margin: 0 auto; 
+    border: 3px solid red;
+}
+.aboutContainer {
+    width: 50%;
+    margin: 0 auto; 
+    border: 3px solid yellow;
+    text-align:center
+}
+.downArrowContainer {
+    width: 50%;
+    margin: 0 auto; 
+    border: 3px solid yellow;
+}
+.down-arrow {
+    margin: 20px 0;
+    display: block;
+
+    width: 60px;
+    height: auto;
+
+    width: 50%;
+    margin: 0 auto; 
+}
+.aboutText {
+    font-family: semplicitaMedium;
+    color: white;
+    font-size: 2em;
+}
