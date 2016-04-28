@@ -30,6 +30,11 @@ body {
 	height: 140px;
 	width: auto;
 }
+a:hover {
+	text-decoration: none;
+	cursor: auto;
+}
+
 
 /* Arrows
 -------------------------------------------------- */
