@@ -26,12 +26,27 @@
                 margin-left: 5px;
                 margin-top: 20px;
             }
+            #backgroundPg2 {
+                width: 100%;
+                height: auto;
+            }
         </style>
     </head>
 
     <body class="animsition">
 
-        <img src="img/whiteShirt.jpeg" id="backgroundPg2">
+        <!-- <img src="img/whiteShirt.jpeg" id="backgroundPg2"> -->
+        <!-- <video width="320" height="240" controls> -->
+        
+        <video id="backgroundPg2" controls>
+            <source src="img/IMG_0071.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+        </video>
+    
+    <!--
+    <div id="container"> <video id="backgroundPg2" width="480" height="270" preload="none" poster="img/shirt_striped.jpeg" controls> <source src="img/IMG_0071.mp4" type="video/mp4"></source> <source src="video4.ogg" type="video/ogg"></source> <source src="video4.webm" type="video/webm"></source> </video> <div id="controls"> <button id="start">Play</button> <button id="stop" disabled>Stop</button> <button id="pause" disabled>Pause</button> <button id="plus" title="Volum" disabled>Up</button> <button id="minus" title="Volum" disabled>Down</button> <button id="mute" disabled>Mute</button> </div> <div id="progressbar"> <div id="loadingprogress"></div> <div id="butterfly"></div> </div> </div>
+-->
 
         <div class="container">
             <div class="row">
@@ -56,7 +71,7 @@
                                 <!-- <img src="img/white-arrow-down.png" class="arrow" id="leftArrow"> -->
                                 <a href="process2.html"
                                     class="animsition-link"
-                                    data-animsition-out-class="fade-out-left"
+                                    data-animsition-out-class="fade-out-right"
                                     data-animsition-out-duration="2000"
                                 >
                                     <img src="img/white-arrow-down.png" class="arrow" id="leftArrow">
@@ -68,7 +83,7 @@
                                 <!-- <span class="arrowText">process</span> -->
                                 <a href="process2.html"
                                     class="animsition-link"
-                                    data-animsition-out-class="fade-out-left"
+                                    data-animsition-out-class="fade-out-right"
                                     data-animsition-out-duration="2000"
                                 >
                                     <span class="arrowText">process</span>
@@ -81,7 +96,7 @@
                                 <!-- <span class=" arrowText pull-right">shop</span> -->
                                 <a href="checkout.html"
                                     class="animsition-link"
-                                    data-animsition-out-class="fade-out-right"
+                                    data-animsition-out-class="fade-out-left"
                                     data-animsition-out-duration="2000"
                                 >
                                     <span class=" arrowText pull-right">shop</span>
@@ -93,7 +108,7 @@
                                 <!-- <img src="img/white-arrow-down.png" class="arrow" id="rightArrow"> -->
                                 <a href="checkout.html"
                                     class="animsition-link"
-                                    data-animsition-out-class="fade-out-right"
+                                    data-animsition-out-class="fade-out-left"
                                     data-animsition-out-duration="2000"
                                 >
                                     <img src="img/white-arrow-down.png" class="arrow" id="rightArrow">
