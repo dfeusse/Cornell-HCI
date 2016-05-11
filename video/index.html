@@ -27,12 +27,21 @@
                 margin-left: 5px;
                 margin-top: 20px;
             }
+            #background {
+                height: 90%;
+            }
 
         </style>
     </head>
 
     <body class="animsition">
-        <img src="../img/corner.png" id="background">
+        <!-- <img src="../img/corner.png" id="background"> -->
+        <video id="background" controls>
+            <source src="IMG_0087.m4v" type="video/mp4">
+            <!-- <source src="movie.ogg" type="video/ogg"> -->
+                Your browser does not support the video tag.
+        </video>
+
 
         <div class="container">
             <div class="row">
@@ -111,6 +120,31 @@
                 });
             });
         </script>
+
+        <script> 
+            var myVideo = document.getElementById("background"); 
+
+            function playPause() { 
+                if (myVideo.paused) 
+                    myVideo.play(); 
+                else 
+                    myVideo.pause(); 
+            } 
+
+            function makeBig() { 
+                myVideo.width = 1250; 
+            } 
+
+            function makeSmall() { 
+                myVideo.width = 420; 
+            } 
+
+            function makeNormal() { 
+                myVideo.width = 560; 
+            } 
+
+            myVideo.addEventListener('click', playPause);
+        </script> 
 
     </body>
 </html>
